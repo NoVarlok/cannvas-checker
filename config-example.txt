@@ -1,0 +1,4 @@
+Windows 10 Pro 10.0.18362
+Intel(R) UHD Graphics 620
+Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+Google Chrome 79.0.3945.130
