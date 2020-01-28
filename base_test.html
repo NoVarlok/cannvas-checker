@@ -1,0 +1,26 @@
+<canvas id="canvas" width=240 height=25 style="background-color:#808080">
+</canvas>
+<p></p>
+<script type="text/javascript">
+//var txt = "BrowserLeaks,com <canvas> 1.0";
+var example = document.getElementById("canvas"),
+ctx= example.getContext('2d');
+var txt = "BrowserLeaks,com <canvas> 1.0";
+ctx.textBaseline = "top";
+// The most common type
+ctx.font = "14px 'Arial'";
+ctx.textBaseline = "alphabetic";
+ctx.fillStyle = "#f60";
+ctx.fillRect(125,1,62,20);
+// Some tricks for color mixing to increase the difference in rendering
+ctx.fillStyle = "#069";
+ctx.fillText(txt, 2, 15);
+ctx.fillStyle = "rgba(102, 204, 0, 0.7)";
+ctx.fillText(txt, 4, 17);
+
+download_img = function(el) {
+  var image = canvas.toDataURL("image/jpg");
+  el.href = image;
+};
+</script>
+<a id="download" download="base_test_image.jpg" href="" onclick="download_img(this);">Download to myImage.jpg</a>
